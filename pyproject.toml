@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "env-drift"
+version = "0.1.0"
+description = "Offline environment-variable contract auditing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+env-drift = "env_drift.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
