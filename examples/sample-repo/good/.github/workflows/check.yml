@@ -1,0 +1,5 @@
+jobs:
+  check:
+    env:
+      APP_PORT: example-only
+      DATABASE_URL: example-only
