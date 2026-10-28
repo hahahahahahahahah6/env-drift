@@ -81,8 +81,8 @@ Development and local packaging (build tooling is not a runtime dependency):
 
 ```sh
 PYTHONPATH=src python3 -m unittest discover -s tests -v
-python -m build
-python -m venv /tmp/env-drift-smoke
+python3 -m build
+python3 -m venv /tmp/env-drift-smoke
 /tmp/env-drift-smoke/bin/pip install --no-deps dist/*.whl
 /tmp/env-drift-smoke/bin/env-drift --version
 /tmp/env-drift-smoke/bin/env-drift audit examples/sample-repo/good
